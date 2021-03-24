@@ -26,7 +26,7 @@ function App(){
   async function fetchUserDetails(){
     // 1) Fetch to see if the user has already selected their favourite team (do this by scanning the database for their username and seeing their chosen team)
     const userName = await(Auth.currentUserInfo()).username
-    
+
 
   }
 
@@ -71,7 +71,7 @@ function App(){
                     }
                   </tbody>
                 </table>
-                <button onClick={()=>{clickityClick(click+1)}}>Change team</button>
+                <button>Change team</button>
 
                 <AmplifySignOut style={{position:'relative',top:'82px'}}/>
       </div>
